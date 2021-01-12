@@ -1,3 +1,4 @@
+const URL_API = "https://time-zone-converter-api.herokuapp.com/api";
 
 // Acion Types
 const CONVERTER = "[Converter] Time UTC";
@@ -30,7 +31,7 @@ export const setErrorConverter = (response) => ({
 
 export const convertTimeMiddleware = (formValues) => {
   return (dispatch) => {
-    fetch("http://localhost:8080/api", {
+    fetch(URL_API, {
       method: "POST",
       headers: {
         Accept: "application/json",
