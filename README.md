@@ -49,7 +49,7 @@ Ahora que ya se tiene instalada las dependencias es hora de ejecutar el proyecto
 
 ## Construido con 🛠️
 
-* [ReactJS 17.0.1](https://reactjs.org/docs/getting-started.html) - La libreria web más usada
+* [ReactJS 17.0.1](https://reactjs.org/docs/getting-started.html) - El librería web más usada
 * [Formik 2.2.6](https://formik.org/docs/overview) - Gestionando formularios
 * [Yup 0.32.8](https://formik.org/docs/overview) - Libreria para realizar las validaciones del formulario
 * [Redux 4.0.5](https://redux.js.org/introduction/getting-started) - Contenedor de estados
