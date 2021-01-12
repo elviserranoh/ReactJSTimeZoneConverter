@@ -59,6 +59,7 @@ Ahora que ya se tiene instalada las dependencias es hora de ejecutar el proyecto
 * [Redux 4.0.5](https://redux.js.org/introduction/getting-started) - Contenedor de estados
 * [React-Redux 7.2.2](https://redux.js.org/introduction/getting-started) - Facilitar la implementación de redux
 * [Redux-Thunk 2.3.0](https://redux.js.org/introduction/getting-started) - Middleware para Redux
+* [Moment 2.29.1](https://momentjs.com/) - Libreria para gestionar fechas y horas, utilizada para obtener la hora y zonra horaria del usuario
 * [Bootstrap 5](https://redux.js.org/introduction/getting-started) - Framework CSS
 
 ## Contribuyendo 🖇️

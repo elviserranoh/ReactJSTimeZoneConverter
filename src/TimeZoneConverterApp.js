@@ -3,17 +3,26 @@ import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { convertTimeMiddleware } from "./duck/time";
+import moment from 'moment';
 
 export const TimeZoneConverterApp = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.time);
 
-  const { handleSubmit, handleChange, values, touched, errors } = useFormik({
-    initialValues: {
-      time: "5:34:23",
-      timezone: "-4:00",
-    },
+  const getTimeZoneLocal = () => moment().format("Z");
+  const getTimeCurrent = () => moment().format("HH:mm:ss");
 
+  console.log(getTimeCurrent())
+
+  const { handleSubmit, handleChange, values, errors } = useFormik({
+    initialValues: {
+      time: getTimeCurrent(),
+      timezone: getTimeZoneLocal(),
+    },
+    validationSchema: Yup.object().shape({
+      time: Yup.string().required("Required"),
+      timezone: Yup.string().required("Required"),
+    }),
     onSubmit: (values) => {
       dispatch(convertTimeMiddleware(values));
     },
@@ -71,7 +80,7 @@ export const TimeZoneConverterApp = () => {
                     onChange={handleChange}
                     value={values.time}
                   />
-                  {touched.time && errors.time && (
+                  {errors.time && (
                     <div className="text-danger">{errors.time}</div>
                   )}
                 </div>
@@ -89,7 +98,7 @@ export const TimeZoneConverterApp = () => {
                     onChange={handleChange}
                   />
 
-                  {touched.timezone && errors.timezone && (
+                  {errors.timezone && (
                     <div className="text-danger">{errors.timezone}</div>
                   )}
                 </div>
