@@ -1,4 +1,4 @@
-# Título del Proyecto
+# TimeZoneConverterApp
 
 _Esta aplicación web se encarga de proveer un formulario a los usuarios que permite introducir UNA hora y una zona horaria para obtener su version en utc_
 
