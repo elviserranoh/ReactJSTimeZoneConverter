@@ -47,11 +47,6 @@ Ahora que ya se tiene instalada las dependencias es hora de ejecutar el proyecto
 *npm start
 ```
 
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-
 ## Construido con 🛠️
 
 * [ReactJS 17.0.1](https://reactjs.org/docs/getting-started.html) - El framework web usado
