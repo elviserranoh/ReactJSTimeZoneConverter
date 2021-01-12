@@ -2,6 +2,7 @@ const URL_API = "https://time-zone-converter-api.herokuapp.com/api";
 
 // Acion Types
 const CONVERTER = "[Converter] Time UTC";
+const LOADING = "[Loading] Loading";
 const ERROR = "[Converter] Time UTC Error";
 
 //Reducer
@@ -9,6 +10,8 @@ export const timeReducer = (state = {}, action) => {
   switch (action.type) {
     case CONVERTER:
       return { ...action.response };
+    case LOADING:
+      return { loading: true };
     case ERROR:
       return { ...action.response };
     default:
@@ -22,6 +25,10 @@ export const convertTime = (response) => ({
   response,
 });
 
+export const setLoading = () => ({
+  type: LOADING,
+});
+
 export const setErrorConverter = (response) => ({
   type: ERROR,
   response,
@@ -31,6 +38,7 @@ export const setErrorConverter = (response) => ({
 
 export const convertTimeMiddleware = (formValues) => {
   return (dispatch) => {
+    dispatch(setLoading());
     fetch(URL_API, {
       method: "POST",
       headers: {

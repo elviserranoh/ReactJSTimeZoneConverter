@@ -110,6 +110,11 @@ export const TimeZoneConverterApp = () => {
           >
             <div style={{ textAlign: "center" }}>
               <h1 style={{ fontSize: "40px" }}>Time Zone Converter</h1>
+              {state.loading && (
+                <div className="spinner-border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              )}
               {state.time && (
                 <div>
                   <h1 style={{ fontSize: "30px" }}>Converter Results:</h1>
