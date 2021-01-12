@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Título del Proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Esta aplicación web se encarga de proveer un formulario a los usuarios que permite introducir UNA hora y una zona horaria para obtener su version en utc_
 
-## Available Scripts
+## Comenzando 🚀
 
-In the project directory, you can run:
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-### `npm start`
+### Pre-requisitos 📋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_Que cosas necesitas para instalar el software y como instalarlas_
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+Para poder correr el proyecto en local debes tener instalado nodejs y npm este ultimo se instala al momento de instalar nodejs y si deseas git para clonar el proyecto de lo contrario puedes descargarlo desde githut.
+```
 
-### `npm test`
+### Instalación 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-### `npm run build`
+__Configurar Git y clonar repositorio__
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Primero debes clonar el repositorio, para eso utilizas git, si aún no lo tienes configurado te recomiendo que configures tu email y nombre:
+*git config --global user.name "Tu nombre"
+*git config --global user.email "tuemial@ejemplo.com"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+una vez configurado el nombre y el email procedes a clonar el repositorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*git clone https://github.com/elviserranoh/ReactJSTimeZoneConverter.git
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_Instalar dependencias del proyecto_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+Una vez clonado el repositorio accedes a la carpeta desde el terminal y ejecutas
+*npm install
+si usas yarn
+*yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Correr el proyecto_
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+Ahora que ya se tiene instalada las dependencias es hora de ejecutar el proyecto en local para eso ejecutamos el siguiente comando
+*npm start
+```
 
-## Learn More
+## Ejecutando las pruebas ⚙️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Explica como ejecutar las pruebas automatizadas para este sistema_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Construido con 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [ReactJS 17.0.1](https://reactjs.org/docs/getting-started.html) - El framework web usado
+* [Formik 2.2.6](https://formik.org/docs/overview) - Gestionando formularios
+* [Yup 0.32.8](https://formik.org/docs/overview) - Libreria para realizar las validaciones del formulario
+* [Redux 4.0.5](https://redux.js.org/introduction/getting-started) - Contenedor de estados
+* [React-Redux 7.2.2](https://redux.js.org/introduction/getting-started) - Facilitar la implementación de redux
+* [Redux-Thunk 2.3.0](https://redux.js.org/introduction/getting-started) - Middleware para Redux
+* [Bootstrap 5](https://redux.js.org/introduction/getting-started) - Framework CSS
 
-### Analyzing the Bundle Size
+## Contribuyendo 🖇️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Me falto realizar las pruebas con jest y enzime.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
